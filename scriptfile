@@ -1,0 +1,15 @@
+if [[ ! $1 =~ ^[A-Z] ]]; then
+
+echo "$1 is not a valid Java class name"
+
+exit 1
+
+fi
+
+if [[ $1 =~ [@] ]]; then
+
+echo "$1 is not a valid java class name"
+
+exit 2
+
+fi
